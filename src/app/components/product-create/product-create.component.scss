@@ -1,0 +1,124 @@
+/* Estilos para el fondo del modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+}
+
+/* Estilos para el contenedor del modal */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1050;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Estilos para el encabezado, cuerpo y pie del modal */
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 10px;
+}
+.modal-body {
+  margin-top: 30px;
+  
+}
+.modal-title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+
+.modal-footer {
+  border-top: 1px solid #e5e5e5;
+  text-align: right;
+}
+
+/* Botones y otros elementos */
+.close {
+  float: right;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: black;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+  opacity: 0.75;
+}
+.btn-row {
+  display: flex;
+}
+
+.form-button {
+  width: 100%;
+  text-align: center;
+}
+.btn-primary {
+  background-color: #1b153e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px;
+}
+.btn-secondary {
+  background-color: #ececf4;
+  color: #1b153e;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+  margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.form-field {
+  flex-basis: calc(
+    50% - 10px
+  ); /* Cada campo ocupa un poco menos del 50% para dejar espacio */
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1b153e;
+}
+
+input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 20px;
+}
+
+.form-submit {
+  text-align: center;
+}

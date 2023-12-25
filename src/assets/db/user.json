@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "document": "987654321",
+    "firstname": "Emmanuel",
+    "surname": "Acosta",
+    "typedoc": "cc",
+    "password": "123",
+    "token": "token123"
+  },
+  {
+    "id": 2,
+    "document": "123456789",
+    "firstname": "admin",
+    "surname": "",
+    "typedoc": "cc",
+    "password": "123",
+    "token": "token123"
+  }
+]

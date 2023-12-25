@@ -1,1 +1,50 @@
-<p>login works!</p>
+<div class="login-container">
+  <mat-card>
+    <div class="login-logo">
+      <img src="../../../assets/img/logo.png" alt="Logo" />
+    </div>
+    <mat-card-title>INICIAR SESIÓN</mat-card-title>
+    <mat-card-content>
+      <form class="login-form" (ngSubmit)="onLogin()">
+        <mat-form-field appearance="fill">
+          <mat-label>Tipo de documento</mat-label>
+          <mat-select [(ngModel)]="loginData.documentType" name="documentType">
+            <mat-option value="cc">Cédula De Ciudadanía</mat-option>
+            <mat-option value="ti">Tarjeta de Identidad</mat-option>
+            <mat-option value="pt">Pasaporte</mat-option>
+            <mat-option value="pt"> Registro Civil </mat-option>
+            <mat-option value="np">NUIP</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Número de documento</mat-label>
+          <input
+            matInput
+            [(ngModel)]="loginData.documentNumber"
+            name="documentNumber"
+            placeholder="Ingrese su número de documento"
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input
+            matInput
+            type="password"
+            [(ngModel)]="loginData.password"
+            name="password"
+            placeholder="Ingrese su contraseña"
+          />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">
+          INGRESAR
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="/forgot-password">¿Olvidó su contraseña?</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
